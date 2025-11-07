@@ -2,12 +2,6 @@
       "name": "Online Chess Course Platform",
       "version": "0.1.0",
       "private": true,
-      "type": "module",
-      "scripts": {
-            "dev": "vite",
-            "build": "vite build",
-            "preview": "vite preview"
-      },
       "dependencies": {
             "@jsr/supabase__supabase-js": "^2.49.8",
             "@radix-ui/react-accordion": "^1.2.3",
@@ -60,7 +54,14 @@
       },
       "devDependencies": {
             "@types/node": "^20.10.0",
-            "@vitejs/plugin-react": "^4.3.3",
-            "vite": "^5.4.10"
+            "@types/react": "^19.2.2",
+            "@types/react-dom": "^19.2.2",
+            "@vitejs/plugin-react-swc": "^3.10.2",
+            "vite": "^6.4.1"
+      },
+      "scripts": {
+            "build": "node node_modules/vite/bin/vite.js build",
+            "dev": "node node_modules/vite/bin/vite.js",
+            "preview": "node node_modules/vite/bin/vite.js preview"
       }
 }
